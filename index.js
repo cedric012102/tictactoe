@@ -1,8 +1,12 @@
 var move = 1
 var play = true
 var draw = "Nobody Wins"
-
 $('table tr td').click(function() {
+    if(move % 2 != 0){
+        $('.turnIndicator').html(`Player 2's turn`)
+    } else {
+        $('.turnIndicator').html(`Player 1's turn`)
+    }
     if( $(this).text()== "" && play) {
         if( (move%2)== 1){
             $(this).append('X');
@@ -25,10 +29,10 @@ $('table tr td').click(function() {
                 // $('.button').css('color', purple);
             }
             play = false;
+            $('.turnIndicator').html(``)
         }
     }
 });
-
 function findWinner(){
     sp1 = $('table tr:nth-child(1) td:nth-child(1)').text();
     sp2 = $('table tr:nth-child(1) td:nth-child(2)').text();
@@ -60,6 +64,11 @@ function findWinner(){
         return sp9;
     } else if ((sp3 == sp5) && (sp5 == sp7)) {
         return sp7;
+    }
+    //draw 
+    if (move == 10){
+        $('.turnIndicator').html(`Draw`)
+        $('body').append('<button class="playAgainButton" onclick="location.reload()">Play Again</button>');
     }
     //no winner
     return -1;
