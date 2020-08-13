@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Recursive', sans-serif;
+    color: white;
 }
 body {
-    background-image: url(https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg);
+    background-image: url("https://c1.wallpaperflare.com/preview/143/196/914/klee-four-leaf-clover-lucky-clover-tic-tac-toe.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
