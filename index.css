@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Recursive', sans-serif; */
+}
+
+body {
+    background-image: url(https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px auto;
+    background-color: cyan;
+}
+
+table tr td {
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    font-size: 35px;
+    text-align: center;
+}
+
+table tr td:hover {
+    background-color: rgb(60, 60, 73);
+    cursor: pointer;
+}
+
+.winner {
+    width: 240px;
+    height: 140px;
+    margin: 10px auto;
+    font-size: 60px;
+    text-align: center;
+    background-color: purple;
+}
+
+.winner span {
+    font-size: 40px;
+    display: block;
+}
+
+button {
+    width: 240px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+    background-color: coral;
+    font-size: 40px;
+   
+
+}
+
+
+
+img {
+    float: right;
+}
